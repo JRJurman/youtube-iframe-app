@@ -1,3 +1,82 @@
+/* remove margin and overflow so that
+	the window is edge to edge */
 body {
+	margin: 0;
+	overflow: hidden;
+}
+
+main {
 	font-family: sans-serif;
+
+	/* make app narrow and center */
+	max-width: 700px;
+	margin: auto;
+	text-align: center;
+}
+
+.introduction {
+	margin-bottom: 2em;
+}
+
+label[for="videoUrl"] {
+	grid-area: urllabel;
+}
+
+input[name="videoUrl"] {
+	grid-area: urlinput
+}
+
+label[for="appTitle"] {
+	grid-area: appTitleLabel;
+}
+
+input[name="appTitle"] {
+	grid-area: appTitleInput
+}
+
+.autoplay-title {
+	grid-area: autoplaylabel;
+}
+
+input[name="autoplay"] {
+	grid-area: autoplayinput
+}
+
+.autoplay-hint {
+	grid-area: autoplayhint;
+	font-style: italic;
+}
+
+.controls-title {
+	grid-area: controlslabel;
+}
+
+input[name="controls"] {
+	grid-area: controlsinput
+}
+
+.controls-hint {
+	grid-area: controlshint;
+	font-style: italic;
+}
+
+input[type="submit"] {
+	grid-area: videopage
+}
+
+.create-video-form {
+	display: grid;
+	width: 80%;
+	margin: auto;
+	row-gap: 1em;
+	align-items: center;
+	justify-content: center;
+  grid-template-columns: 1fr 0.2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "urllabel      urlinput 			urlinput"
+    "appTitleLabel appTitleInput 	appTitleInput"
+		"autoplaylabel autoplayinput 	autoplayhint"
+		"controlslabel controlsinput 	controlshint"
+		"videopage     videopage 			videopage";
 }

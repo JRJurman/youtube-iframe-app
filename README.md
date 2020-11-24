@@ -1,4 +1,7 @@
-# youtube-iframe-app
+# Youtube iFrame App
+
+In this webapp, you can build a simple page that lets you install an app that is a youtube video.<br/>
+This is great for when you want to make a playlist or live stream a dedicated app.
 
 ## Development instructions
 1. In the root directory, run `npm install` to install all the project dependencies
