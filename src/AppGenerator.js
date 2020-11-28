@@ -29,31 +29,31 @@ export default () => {
 	return html`
     <main>
       <title>Youtube iFrame App</title>
-      <header class="introduction">
-        <h1>Youtube iFrame App</h1>
-        <p>
+      <h1>Youtube iFrame App</h1>
+      <section class="app-content">
+        <p class="introduction">
           In this webapp, you can build a simple page that lets you install an app that is a youtube video.<br/>
           This is great for when you want to make a playlist or live stream a dedicated app.
         </p>
-      </header>
-      <form class="create-video-form" onsubmit=${goToVideoPage}>
+        <form class="create-video-form" onsubmit=${goToVideoPage}>
 
-        <label for="videoUrl">Video URL</label>
-        <input type="text" id="videoUrl" name="videoUrl" placeholder="https://youtu.be/ or https://www.youtube.com/watch" />
+          <label for="videoUrl" class="title">Video URL</label>
+          <input type="text" id="videoUrl" name="videoUrl" placeholder="https://youtu.be/ or https://www.youtube.com/watch" />
 
-        <label for="appTitle">App Title</label>
-        <input type="text" id="appTitle" name="appTitle" placeholder="My Favorite Playlist" />
+          <label for="appTitle" class="title">App Title</label>
+          <input type="text" id="appTitle" name="appTitle" placeholder="My Favorite Playlist" />
 
-        <label for="autoplay" class="autoplay-title">Autoplay</label>
-        <input type="checkbox" id="autoplay" name="autoplay" />
-        <label for="autoplay"class="autoplay-hint">Should the video start as soon as the page is loaded?</label>
+          <label for="autoplay" class="autoplay-title title">Autoplay</label>
+          <input type="checkbox" id="autoplay" name="autoplay" />
+          <label for="autoplay"class="autoplay-hint hint">Should the video start as soon as the page is loaded?</label>
 
-        <label for="controls" class="controls-title">Controls</label>
-        <input type="checkbox" id="controls" name="controls" />
-        <label for="controls" class="controls-hint">Should playback controls be visible on the video?</label>
+          <label for="controls" class="controls-title title">Controls</label>
+          <input type="checkbox" id="controls" name="controls" />
+          <label for="controls" class="controls-hint hint">Should playback controls be visible on the video?</label>
 
-        <input type="submit" value="Go to Video Page">
-      </form>
+          <input type="submit" value="Go to Video Page">
+        </form>
+      </section>
     </main>
   `
 }
