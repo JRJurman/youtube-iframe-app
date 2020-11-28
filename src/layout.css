@@ -6,10 +6,8 @@ body {
 }
 
 main {
-	font-family: sans-serif;
-
 	/* make app narrow and center */
-	max-width: 700px;
+	max-width: 600px;
 	margin: auto;
 	text-align: center;
 }
