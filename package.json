@@ -6,8 +6,8 @@
     "build": "parcel build index.html",
     "test": "jest --watch",
     "lint": "xo",
-    "prepublish": "npm run build",
-    "publish": "surge dist --domain https://youtube-iframe-app.surge.sh"
+    "prepublish:site": "npm run build",
+    "publish:site": "surge dist --domain https://youtube-iframe-app.surge.sh"
   },
   "dependencies": {
     "@testing-library/dom": "^6.11.0",
